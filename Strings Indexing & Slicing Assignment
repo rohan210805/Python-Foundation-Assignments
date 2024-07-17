@@ -1,6 +1,6 @@
 Q1. How can we store a s1ngle quote (‘) as a str1ng 1n a var1able?
 
-You can store a s1ngle quote (') as a string in a variable by using double quotes (") to define the string, or by escaping the single quote within single quotes using a backslash (\).
+We can store a s1ngle quote (') as a string in a variable by using double quotes (") to define the string, or by escaping the single quote within single quotes using a backslash (\).
 
 e.g
 1. Using double quotes
