@@ -1,0 +1,94 @@
+Q1. What is a set in Python?
+
+A set in Python is a collection data type that is unordered, mutable, and does not allow duplicate elements. Sets are useful for storing unique items and performing mathematical set operations like union, intersection, difference, and symmetric difference.
+
+1. The elements in a set do not have a specific order.
+2. We can add or remove elements from a set after its creation.
+3. A set automatically removes duplicate elements.
+
+e.g
+my_set = {1, 2, 3, 4, 5}
+print(my_set)  
+
+Outputs: {1, 2, 3, 4, 5}
+
+
+Q2.How do you create a set in Python?
+
+In Python, we can create a set in two main ways: using curly braces {} or the set() constructor. 
+1. Using Curly Braces {}
+my_set = {1, 2, 3, 4, 5}
+print(my_set)  
+
+Outputs: {1, 2, 3, 4, 5}
+
+2. Using the set() Constructor
+my_set = set([1, 2, 3, 4, 5])
+print(my_set)  
+
+Outputs: {1, 2, 3, 4, 5}
+
+
+Q3. How do you add elements to a set in Python?
+
+To add elements to a set in Python, we can use the add() method or the update() method.
+
+1. Using the add() method:
+Adds a single element to the set.
+
+my_set = {1, 2, 3}
+my_set.add(4)
+print(my_set)  
+
+Outputs: {1, 2, 3, 4}
+
+2. Using the update() method:
+Adds multiple elements to the set.
+
+my_set = {1, 2, 3}
+my_set.update([4, 5])
+print(my_set)  
+
+Outputs: {1, 2, 3, 4, 5}
+
+
+Q4. How do you remove elements from a set in Python?
+
+In Python, we can remove elements from a set using several methods, such as remove(), discard(), and pop().
+1. remove() method:
+Removes a specified element from the set. Raises a KeyError if the element is not found.
+
+my_set = {1, 2, 3, 4, 5}
+my_set.remove(3)
+print(my_set)  
+
+Outputs: {1, 2, 4, 5}
+
+2. discard() method:
+Removes a specified element from the set. Does not raise an error if the element is not found.
+
+my_set = {1, 2, 3, 4, 5}
+my_set.discard(3)
+print(my_set)  
+
+Outputs: {1, 2, 4, 5}
+
+3. pop() method:
+Removes and returns an arbitrary element from the set. Raises a KeyError if the set is empty.
+
+my_set = {1, 2, 3, 4, 5}
+popped_element = my_set.pop()
+print(popped_element)  
+print(my_set)  
+
+Outputs: set with the popped element removed
+
+
+Q5. How do you get the length of a set in Python?
+
+my_set = {1, 2, 3, 4, 5}
+length_of_set = len(my_set)
+print(length_of_set)  
+
+Outputs: 5
+
