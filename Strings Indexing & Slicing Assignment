@@ -1,0 +1,101 @@
+Q1. How can we store a s1ngle quote (‘) as a str1ng 1n a var1able?
+
+You can store a s1ngle quote (') as a string in a variable by using double quotes (") to define the string, or by escaping the single quote within single quotes using a backslash (\).
+
+e.g
+1. Using double quotes
+
+single_quote_str = "'"
+print(single_quote_str) 
+
+2. Escaping the single quote
+
+single_quote_str = '\''
+print(single_quote_str) 
+
+
+Q2. Refer the below variable:
+x = 'a'
+Here, is x a character type or string type variable? Support your answer with an explanat1on.
+
+
+In Python, the variable x is of string type, even though it contains a single character.
+
+explanation:
+Python does not have a separate character type.
+Any single character enclosed in quotes (' or ") is treated as a string of length 1.
+
+
+
+Q3. Apply the following functions on this variable: ‘Welcome to Python foundation course'
+1. find ()
+2. count()
+3. len()
+4. Concatenation()
+Note: You can use your choice of parameters But make sure it is correct.
+
+
+string = 'Welcome to Python foundation course'
+
+# find()
+index = string.find('Python')
+print(index)  
+
+
+# count()
+count = string.count('o')
+print(count)  
+
+
+# len()
+length = len(string)
+print(length)  
+
+
+# Concatenation
+string2 = ' Enjoy your learning!'
+concatenated_string = string + string2
+print(concatenated_string) 
+
+
+
+Q4. For the var1able: word = ‘PanaJi@12256'
+Calculate the follow1ng:
+(a) Total number of alphabets in lowercase
+(b) Total number of alphabets in uppercase
+(c) Total number of numerical in string
+
+
+
+word = 'PanaJi@12256'
+
+# (a) Total number of alphabets in lowercase
+lowercase_count = sum(1 for char in word if char.islower())
+print("Total number of alphabets in lowercase:", lowercase_count)  
+
+# (b) Total number of alphabets in uppercase
+uppercase_count = sum(1 for char in word if char.isupper())
+print("Total number of alphabets in uppercase:", uppercase_count) 
+
+# (c) Total number of numericals in string
+numerical_count = sum(1 for char in word if char.isdigit())
+print("Total number of numericals in string:", numerical_count) 
+
+output:
+Total number of alphabets in lowercase: 4
+Total number of alphabets in uppercase: 2
+Total number of numericals in string: 5
+
+
+
+
+Q5. Write a code to store a numerical value inside a var1able then convert it into string.
+
+
+num = 12345
+
+num_str = str(num)
+
+print(num_str) 
+print(type(num_str)) 
+
