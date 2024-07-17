@@ -1,0 +1,86 @@
+Q1. What is a tuple in Python?
+
+In Python, a tuple is an ordered collection of elements that is immutable and allows duplicate elements. Tuples are similar to lists but with the key difference that tuples cannot be changed once created, meaning their elements cannot be modified, added, or removed.
+
+Key Characteristics of Tuples:
+Ordered: Elements in a tuple are ordered and can be accessed by index.
+Immutable: Once a tuple is created, you cannot change its elements.
+Allows Duplicates: Tuples can contain duplicate elements.
+
+e.g
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)  
+
+Outputs: (1, 2, 3, 4, 5)
+
+
+Q2. How do you create a tuple in Python?
+
+In Python, we can create a tuple by enclosing elements in parentheses () and separating them with commas. 
+
+Example 1: Creating a tuple with integers
+my_tuple = (1, 2, 3, 4, 5)
+print(my_tuple)  
+
+Outputs: (1, 2, 3, 4, 5)
+
+Example 2: Creating a tuple with mixed data types
+mixed_tuple = ('apple', 3.14, True)
+print(mixed_tuple)  
+
+Outputs: ('apple', 3.14, True)
+
+
+Q3. What is the difference between a tuple and a list in Python?
+
+Comparison:
+
+Mutability: Tuples are immutable, while lists are mutable.
+Syntax: Tuples use parentheses () and lists use square brackets [].
+Operations: Lists support operations like appending, removing, and inserting elements, which are not possible with tuples.
+Performance: Due to immutability, tuples can be slightly more memory efficient and faster in operations where immutability is advantageous.
+
+
+Q4. Can a tuple be changed in Python?
+
+No, a tuple cannot be changed in Python once it is created. Tuples are immutable, meaning their elements cannot be modified, added, or removed after initialization. This immutability distinguishes tuples from lists, which are mutable and allow for dynamic changes.
+
+
+Q5. How do you access elements in a tuple?
+
+We can access elements in a tuple in Python using indexing and slicing.
+
+e.g
+my_tuple = (1, 2, 3, 'hello', 'world')
+
+#index
+print(my_tuple[0])   
+Outputs: 1
+
+#Slicing
+print(my_tuple[1:4])  
+Outputs: (2, 3, 'hello')
+
+
+Q6. How do you unpack a tuple in Python?
+
+In Python, tuple unpacking allows us to assign individual elements of a tuple to separate variables in a single statement. This is useful when we want to extract and work with each element of a tuple individually.
+
+e.g
+my_tuple = (1, 2, 'hello')
+a, b, c = my_tuple
+
+print(a)  
+Outputs: 1
+print(b)  
+Outputs: 2
+print(c)  
+Outputs: 'hello'
+
+
+
+
+
+
+
+
